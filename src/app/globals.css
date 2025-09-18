@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-primary: #ff3b7e;
+  --brand-secondary: #47c5fb;
+  --brand-radius: 12px;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  @apply bg-[color:var(--bg-base)] text-[color:var(--text-base)];
+}
+
+/* Accessible focus outline */
+:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
